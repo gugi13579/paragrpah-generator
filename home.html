@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>
+            random paragraph
+	</title>
+</head>
+
+<body style = "text-align:center;">
+	
+	<h1 style = "color:rgb(2, 16, 2);">
+		paragraph generator
+	</h1>
+
+	<button id = "button" onclick = "randp()">
+		click here
+	</button>
+	
+	<p id = "GFG_DOWN" style =
+		"font-size: 18px; font-weight: bold; color: rgb(2, 22, 2);">
+	</p>
+    <img src="LOGOMINHALNEW.png" width="100px" height="100px" style="position: absolute; top: 30px; left: 30px;">
+
+    </body>
+	<script>
+		var up = document.getElementById('GFG_UP');
+		var down = document.getElementById('GFG_DOWN');
+		
+		var arr = ["hey", "bye",
+				"no", "go"];
+		
+		up.innerHTML = "Click on the button to check "
+			+ "the type of element.<br><br>" + arr;
+		
+		function randp() {
+			down.innerHTML =
+				arr[Math.floor(Math.random() * arr.length)];
+		}
+	</script>
+</body>
+
+</html>
